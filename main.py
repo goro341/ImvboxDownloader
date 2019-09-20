@@ -65,4 +65,5 @@ def main():
 if __name__ == '__main__':
     main()
     merge_files()
-    subprocess.run(['ffmpeg', '-i', ])
+    subprocess.run(['ffmpeg', '-i', get_merged_file_path(film_name, '.ts'),
+                    get_merged_file_path(film_name, '.mp4')])
